@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="image/noticia-2.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Entre em contato</h1>
+        <nav>
+           <ul>
+             <li><a href="index.html"rel="prev">Home</a></li>
+             <li><a href="Sobre.html" rel="prev">Sobre</a></li>
+             <li><a href="contato.html" rel="prev">Contato</a></li>   
+           </ul>     
+        </nav>
+</header> 
+<main class="new-container">
+    <section>
+    <h2>Informações que devem ser preechidas </h2>
+    <article class="new-item" style="height: 1000px;">
+          
+           <h3>informe seus dados abaixo</h3>
+        
+           <form action="#" method="get" > <!-- o atributo action para qual pagina voi enviar o formulario, eu coloquei um todo "get" para enviar as informaçoes pela URL ou resgatar algo do servidor, ja o post enavia dados para oservidor-->
+
+            <label for="nome" >Nome:</label><!-- o label e pra especificar o rotulo/campo do input, e o "for" deve referenciar ao "id"  -->
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome"><!-- aqui deve ficar o campo que deve ser preenchido do formulario-->
+        <br>
+        <!--o placeholder="", serve para guiar/da dicas oque o usuario deve fazer no formulario-->
+    
+            <label for="email" >Email:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email">
+        <br>
+          
+    
+            <label for="numero">Digite sua idade:</label>
+            <input type="number" name="numero" id="numero" min="18" placeholder="Digite sua idade"> <!--coloquei um limite que deve ter de idade com o parametro "min"-->
+       
+        <br><!-- abaixo fica os topicos de genero-->
+            <label for="masculino">Masculino</label><!---tambem usamos a mesma logica dos label e input anteriores-->
+            <input type="radio" name="generos" id="masculino"><br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="generos" id="feminino">
+            <br>
+            <h3>Diga sua região</h3>
+            <select>
+                <option>Nordeste</option>
+                <option>Su-destes</option>
+                <option>Norte</option>
+                <option>Centro-este</option>
+                <option>Leste</option>
+                <option>Sul</option>
+    
+            </select>
+            <h4>Fale seu relato abaixo:</h4>
+            <div><textarea placeholder="Digite seu relato" name="" id="" cols="51" rows="5" ></textarea></div>
+            <br><br>
+            <button type="reset">Resertar</button>
+            <input type="submit" value="Enviar">
+            
+    </form>
+    </article>    
+    
+
+    
+ 
+</body>
+<footer style="height: 10%;  padding: 6%;">
+    <p>Feito por Kayk Dario Correia de Araujo &copy;2023 </p>
+</footer>
+</html>

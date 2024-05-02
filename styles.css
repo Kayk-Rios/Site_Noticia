@@ -1,0 +1,82 @@
+*{
+   padding: 0%;
+   margin: 0%;
+   font-family: Arial;
+  
+}body{
+   background-color: #ead3d3;
+}
+
+header{
+    background-color: #333;
+    color: #b49c9c;
+    display: flex;/*faz com que os elementos do header fiquem lado a lado*/
+    justify-content: space-between ;/*um espaçamentos entre os itens*/
+    align-items: center;/*alinhei os item do header no centro*/
+    padding: 10px 20px;/*o 1 px e pra cima e baixo ja o 2 px e pros lados*/
+    font-size: 18px;
+}
+nav ul{
+ display: flex;
+ list-style: none;/* tira as bolinhas das listas*/
+ gap: 1rem;/*regra de aspaçamento dos itens*/
+}
+nav a{
+  color: #d8c4c4; 
+  text-decoration: none; /*vai tirar o anderlina dos links*/
+}
+
+/*Conteudo principal*/
+
+.new-container {
+    display: flex;
+    margin: 1rem 0;/*para alterar os espaçamentos externos*/
+    gap: 5rem;
+    justify-content: center;/*Centralizei o meu item da do main/classe*/
+ 
+}
+.new-item{
+border: 1px solid #333;/*px de largura,estilizaçao solida e cor se quiser*/
+margin:1.5rem 0 ;
+box-shadow: rgba(0,0,0, .34)4px 6px 8px  ;/*box shadou serve para adicionar uma sombra nos elementos,os px fora dos parentese servem para para as dimensões das sombras  */
+padding: 1rem ;/* 1rem para o espaçamento interno da borda do conteudo*/
+width: 600px;
+display: flex;
+flex-direction: column;/*se o conteudo sair do coluna colocamos o flex direction: colunm pra centralizar o item um embaixo do outro*/
+gap: 1rem ;
+}
+ .new-item img{ /*vou limitar a altura da imagem*/
+    height: 200px;
+    object-fit: cover;/*tag  para utilizar a img na quela area da melhor forma possivel se o conteiner for menor que a img*/
+
+ }
+
+ /*Barra lateral */
+
+ aside h3{ 
+margin:  1.5rem 0;
+
+ }
+ aside ul  {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: inside;
+    list-style: none;
+     
+    
+
+ }
+ aside li a{
+   color: rgb(106, 74, 93); 
+   border: 10px;
+   font-size: 25px;
+ }
+
+ footer{
+  padding: 2rem; /*define uma a distância entre o conteúdo de um elemento e suas bordas, espaçamento interno*/
+  background-color: rgb(30, 36, 36);
+  text-align: center;
+  color: white;
+  
+ }
